@@ -1,6 +1,19 @@
 [package]
 name = "fyre"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
+
+[[bin]]
+name = "fyre"
+path = "src/main.rs"
 
 [dependencies]
+clap = { version = "4.4", features = ["derive"] }
+colored = "2.0"
+comfy-table = "7.1"
+opener = "0.7"
+regex = "1.10"
+skim = "0.10"
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+anyhow = "1.0"
