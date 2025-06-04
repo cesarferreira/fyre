@@ -1,6 +1,6 @@
 # Fyre - Flutter Development Automation Tool
 
-A powerful Rust-based CLI tool for automating Flutter development workflows. This is a Rust port of the original Ruby CLI tool with additional features like fuzzy search.
+A powerful Rust-based CLI tool for automating Flutter development workflows.
 
 ## Features
 
@@ -22,20 +22,9 @@ A powerful Rust-based CLI tool for automating Flutter development workflows. Thi
 ### Build from Source
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:cesarferreira/fyre.git
 cd fyre
-cargo build --release
-```
-
-The binary will be available at `target/release/fyre`.
-
-### Add to PATH
-
-To use the `fyre` command globally:
-
-```bash
-# Add to your shell profile (.bashrc, .zshrc, etc.)
-export PATH="$PATH:/path/to/fyre/target/release"
+cargo install --path .
 ```
 
 ## Usage
@@ -168,46 +157,6 @@ cargo build --release
 cargo run -- <command>
 ```
 
-### Dependencies
-
-The project uses several key Rust crates:
-
-- `clap` - Command line argument parsing
-- `colored` - Colorized terminal output
-- `comfy-table` - Beautiful table formatting
-- `opener` - Cross-platform URL opening
-- `regex` - Regular expressions for version parsing
-- `skim` - Fuzzy finder implementation
-- `anyhow` - Error handling
-
-## Comparison with Original Ruby Tool
-
-### Improvements
-
-- **Performance**: Significantly faster execution times
-- **Fuzzy Search**: New interactive command selection
-- **Self-contained**: No need for Ruby/gem dependencies
-- **Better Error Handling**: More informative error messages
-- **Native Version Bumping**: Implemented in Rust instead of shell script
-
-### Compatibility
-
-The Rust version maintains full command compatibility with the original Ruby tool while adding new features.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
 ## License
 
-[Your chosen license]
-
-## Acknowledgments
-
-- Original Ruby CLI tool inspiration
-- Flutter team for the excellent development tools
-- Rust community for the amazing ecosystem 
+MIT
